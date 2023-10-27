@@ -4,3 +4,10 @@ git clone git@github.com:montoyaguzman/gen28-intro-frontend-react.git
 cd gen28-intro-frontend-react
 git fetch && git checkout develop
 git pull origin develop
+
+main: la version de produccion (ve lo que ve el cliente)
+develop: rama de integracion de los avances del equipo dev 
+
+feature/publication-screen
+hotfix/icon-page
+bugfix/state-errors
