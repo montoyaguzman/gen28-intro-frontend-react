@@ -9,6 +9,7 @@
 .publication-container {
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .title-card {
@@ -16,7 +17,7 @@
     text-align: center;
 }
 
-button {
+.button {
     background-color: rgb(9, 0, 48);
     color: white;
     border: none;
