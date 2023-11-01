@@ -20,11 +20,6 @@ const root = ReactDOM.createRoot(divRootElement);
  */
 
 root.render(
-  <React.Fragment>
     <App/>
-    <App/>
-    <App/>
-    <App/>
-  </React.Fragment>
 ); // custom tag / web components / componentes reutilizable
 
