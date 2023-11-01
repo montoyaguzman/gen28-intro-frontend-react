@@ -1,0 +1,27 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    gap: 10px;
+    align-items: center;
+}
+
+.publication-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.title-card {
+    color: rgb(29, 0, 159);
+    text-align: center;
+}
+
+.button {
+    background-color: rgb(9, 0, 48);
+    color: white;
+    border: none;
+    font-size: 16px;
+    padding: 8px 0 8px 0;
+    width: 100px;
+}
