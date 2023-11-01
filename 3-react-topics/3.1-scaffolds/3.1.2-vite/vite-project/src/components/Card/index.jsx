@@ -2,16 +2,19 @@
 import React from "react";
 import './styles.css';
 
-function Card(props) {
+function Card({ name, img }) {
 
-  console.log('props', props)
+  // const name = props.name;
+  // const img = props.img;
+
+  // const { name, img } = props;
 
   return ( /** JSX */
     <React.Fragment>
       <div className="card">
-        <h2 className="title-card">{props.name}</h2>
-        <img src={props.img} alt="Este es un pokemon" width="200" height="200" />
-        <button data-index="1" className="button">{props.name}</button>
+        <h2 className="title-card">{name}</h2>
+        <img src={img} alt="Este es un pokemon" width="200" height="200" />
+        <button data-index="1" className="button">{name}</button>
       </div>
     </React.Fragment>
   )
