@@ -1,0 +1,4 @@
+1. Recrear un proyecto con vite con lo visto hasta hoy
+2. Api
+3. Que pasa si no hay informacion? Conditions
+4. Formas de aplicar estilos CSS ? Investigar
