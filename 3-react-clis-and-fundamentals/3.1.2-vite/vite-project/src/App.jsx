@@ -2,6 +2,7 @@
 import React from "react";
 import { Card } from "./components/Card";
 import { Header } from "./components/Header";
+import { CardList } from "./components/CardList";
 
 import bulbiImg from './assets/img/bulbi.jpg';
 import squirtleImg from './assets/img/squirtle.jpg';
@@ -21,21 +22,30 @@ function App() {
     { id: 9, name: 'Charmander 2', img: charmanderImg },
   ];
 
+  const renderPokemons = () => {
+    console.log('pokemons', pokemons)
+    return pokemons.map(element => {
+      return <Card key={element.id} name={element.name} img={element.img} />
+    })
+  }
+
+  const renderNoInfoMessage = () => {
+    return (
+      <>
+        <h3>No hay pokemons disponibles</h3>
+        <span>Por favor consulta mas tarde</span>
+      </>
+    )
+  }
+
   return ( /** JSX */
     <React.Fragment>
+
       <Header />
-      {/* <input type="text" placeholder="escribe tu usuario..." value="montoya" /> */}
-      {/* <Card name={bulbasaur.name} img={bulbasaur.img} />
-      <Card name={squirtle.name} img={squirtle.img} />
-      <Card name={charmander.name} img={charmander.img} />
-      <Card name={charmander2.name} img={charmander2.img} /> */}
-      <div className="card-container">
-        {
-          pokemons.map(element => (
-            <Card key={element.id} name={element.name} img={element.img} />
-          ))
-        }
-      </div>
+
+      <CardList>
+        {pokemons.length > 0 ? renderPokemons() : renderNoInfoMessage()}
+      </CardList>
 
     </React.Fragment>
   )
