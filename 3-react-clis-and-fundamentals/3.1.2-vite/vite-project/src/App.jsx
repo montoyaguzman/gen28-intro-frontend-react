@@ -1,6 +1,6 @@
 
 import React from "react";
-import { Card } from "./components/Card";
+import { CardPokemon } from "./components/CardPokemon";
 import { Header } from "./components/Header";
 import { CardList } from "./components/CardList";
 
@@ -11,21 +11,18 @@ import charmanderImg from './assets/img/charmander.png';
 function App() {
 
   const pokemons = [
-    { id: 1, name: 'Bulbasaur', img: bulbiImg },
-    { id: 2, name: 'Squirtle', img: squirtleImg },
-    { id: 3, name: 'Charmander', img: charmanderImg },
-    { id: 4, name: 'Charmander 2', img: charmanderImg },
-    { id: 5, name: 'Charmander 2', img: charmanderImg },
-    { id: 6, name: 'Charmander 2', img: charmanderImg },
-    { id: 7, name: 'Charmander 2', img: charmanderImg },
-    { id: 8, name: 'Charmander 2', img: charmanderImg },
-    { id: 9, name: 'Charmander 2', img: charmanderImg },
+    { id: 1, name: 'Bulbasaur', img: bulbiImg, description: 'este es el mejor pokemon de la vida' },
+    { id: 2, name: 'Squirtle', img: squirtleImg, description: 'en prioceso...' },
+    { id: 3, name: 'Charmander', img: charmanderImg, description: 'en prioceso...' },
+    { id: 4, name: 'Charmander 2', img: charmanderImg, description: 'en prioceso...' },
+    { id: 5, name: 'Charmander 2', img: charmanderImg, description: 'en prioceso...' },
+    { id: 6, name: 'Charmander 2', img: charmanderImg, description: 'en prioceso...' },
   ];
 
   const renderPokemons = () => {
     console.log('pokemons', pokemons)
     return pokemons.map(element => {
-      return <Card key={element.id} name={element.name} img={element.img} />
+      return <CardPokemon key={element.id} name={element.name} img={element.img} description={element.description} />
     })
   }
 

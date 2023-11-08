@@ -1,4 +1,5 @@
 import React from "react";
+import "./styles.css";
 
 function CardList({ children }) {
 
@@ -6,9 +7,11 @@ function CardList({ children }) {
     // const { children } = props;
 
     return (
-        <React.Fragment>
-            {children}
-        </React.Fragment>
+        <>
+            <div className="card-container">
+                {children}
+            </div>
+        </>
     )
 }
 

@@ -1,15 +1,9 @@
-.card {
+/* .card {
     display: flex;
     flex-direction: column;
     width: 200px;
     gap: 10px;
     align-items: center;
-}
-
-.card-container {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
 }
 
 .title-card {
@@ -24,4 +18,4 @@
     font-size: 16px;
     padding: 8px 0 8px 0;
     width: 100px;
-}
+} */
