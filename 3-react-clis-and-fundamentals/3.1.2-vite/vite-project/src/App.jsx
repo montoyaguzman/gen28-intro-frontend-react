@@ -29,12 +29,16 @@ function App() {
       <Card name={squirtle.name} img={squirtle.img} />
       <Card name={charmander.name} img={charmander.img} />
       <Card name={charmander2.name} img={charmander2.img} /> */}
-      {pokemons.map(element => (
-        <Card key={element.id} name={element.name} img={element.img} />
-      ))
-      }
+      <div className="card-container">
+        {
+          pokemons.map(element => (
+            <Card key={element.id} name={element.name} img={element.img} />
+          ))
+        }
+      </div>
+
     </React.Fragment>
   )
 }
 
-export default App;
+export { App };
