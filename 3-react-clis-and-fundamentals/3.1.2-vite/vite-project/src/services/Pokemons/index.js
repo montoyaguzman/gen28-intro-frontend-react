@@ -1,9 +1,10 @@
-const URL = 'https://pokeapi.co/api/v2/pokemon/';
+const URL = 'http://localhost:3000/pokemons';
 
 const getPokemons = async () => {
     const request = await fetch(URL);
     const response = await request.json();
-    console.log('response', response)
+    console.log('response express', response)
+    return response;
 }
 
 export { getPokemons };
