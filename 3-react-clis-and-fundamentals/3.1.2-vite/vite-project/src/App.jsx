@@ -96,7 +96,7 @@ function App() {
       <button onClick={addNumber}> suma 1 </button>
 
       <CardList>
-        {pokemons.length > 0 ? renderPokemonApi() : renderNoInfoMessage()}
+        {pokemons.length > 0 ? renderPokemons() : renderNoInfoMessage()}
       </CardList>
 
     </React.Fragment>
