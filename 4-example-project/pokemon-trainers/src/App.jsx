@@ -1,10 +1,15 @@
-import './App.css'
+import './App.css';
+import { Menu } from './components/Menu';
+import { TrainersList } from './components/TrainersList';
+import { Card } from './components/Card';
 
 function App() {
 
   return (
     <>
-      <h1>hola mundo!</h1>
+      <Menu />
+      <TrainersList />
+      <Card />
     </>
   )
 }
