@@ -1,5 +1,5 @@
 
-import React from "react";
+import React, { useState } from "react";
 import { CardPokemon } from "./components/CardPokemon";
 import { Header } from "./components/Header";
 import { CardList } from "./components/CardList";
@@ -11,14 +11,19 @@ import { getPokemons } from "./services/Pokemons";
 
 function App() {
 
-  let pokemons = [
+  const initPokemons = [
     { id: 1, name: 'Bulbasaur', img: bulbiImg, description: 'este es el mejor pokemon de la vida' },
-    { id: 2, name: 'Squirtle', img: squirtleImg, description: 'en prioceso...' },
-    { id: 3, name: 'Charmander', img: charmanderImg, description: 'en prioceso...' },
-    { id: 4, name: 'Charmander 2', img: charmanderImg, description: 'en prioceso...' },
-    { id: 5, name: 'Charmander 2', img: charmanderImg, description: 'en prioceso...' },
-    { id: 6, name: 'Charmander 2', img: charmanderImg, description: 'en prioceso...' },
   ];
+
+  // const body = {
+  //   name: ''
+  //   app: ''
+  // }
+  // const { name } = body
+
+  const [pokemons, setPokemons] = useState(initPokemons);
+  // const pokemons = useState()[0];
+  // const setPokemons = useState()[1];
 
   const changePokemon = () => {
     const newPokemons = [
@@ -26,7 +31,8 @@ function App() {
       { id: 2, name: 'Squirtle', img: squirtleImg, description: 'en prioceso...' },
       { id: 3, name: 'Charmander', img: charmanderImg, description: 'en prioceso...' },
     ];
-    pokemons = newPokemons;
+    // pokemons = newPokemons;
+    setPokemons(newPokemons);
     console.log(pokemons)
   }
 
