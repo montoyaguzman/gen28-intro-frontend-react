@@ -6,7 +6,9 @@ function SearchForm() {
 
     return (
         <>
-            <h1>{nameComponent} works!</h1>
+            <div className='container-form'>
+                <h1>{nameComponent} works!</h1>
+            </div>
         </>
     );
 

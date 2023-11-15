@@ -6,8 +6,10 @@ function Card() {
 
     return (
         <>
-            <h1>{nameComponent} works!</h1>
-            <span>este es el component card</span>
+            <div className='container-card'>
+                <h1>{nameComponent} works!</h1>
+                <span>este es el component card</span>
+            </div>
         </>
     );
 

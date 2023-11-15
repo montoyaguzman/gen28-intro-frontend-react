@@ -10,10 +10,12 @@ function Home() {
 
     return (
         <>
-            <h1>page {namePage} works!</h1>
-            <SearchForm />
-            <TrainersList />
-            <Card />
+            <div className='container-home'>
+                <h1>page {namePage} works!</h1>
+                <SearchForm />
+                <TrainersList />
+                <Card />
+            </div>
         </>
     );
 

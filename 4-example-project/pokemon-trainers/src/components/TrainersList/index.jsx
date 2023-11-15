@@ -4,7 +4,13 @@ function TrainersList() {
 
     const nameComponent = 'trainersList'
 
-    return <h1>{nameComponent} works!</h1>;
+    return (
+        <>
+            <div className='container-list'>
+                <h1>{nameComponent} works!</h1>
+            </div>
+        </>
+    );
 
 }
 
