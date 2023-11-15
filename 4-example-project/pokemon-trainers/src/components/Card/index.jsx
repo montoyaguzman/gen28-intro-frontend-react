@@ -1,14 +1,14 @@
 import './styles.css';
 
-function Card() {
-
-    const nameComponent = 'card'
+function Card({ name }) {
+    // function Card(props) {
+    // const name = props.name;
 
     return (
         <>
             <div className='container-card'>
-                <h1>{nameComponent} works!</h1>
-                <span>este es el component card</span>
+                <h1>card works!</h1>
+                <span>name: {name}</span>
             </div>
         </>
     );

@@ -1,13 +1,11 @@
 import './styles.css';
 
-function TrainersList() {
-
-    const nameComponent = 'trainersList'
+function TrainersList({ children }) {
 
     return (
         <>
             <div className='container-list'>
-                <h1>{nameComponent} works!</h1>
+                {children}
             </div>
         </>
     );
