@@ -1,4 +1,4 @@
-import { Menu } from '../../components/Menu';
+import { SearchForm } from '../../components/SearchForm';
 import { TrainersList } from '../../components/TrainersList';
 import { Card } from '../../components/Card';
 
@@ -11,7 +11,7 @@ function Home() {
     return (
         <>
             <h1>page {namePage} works!</h1>
-            {/* SearchForm */}
+            <SearchForm />
             <TrainersList />
             <Card />
         </>

@@ -3,8 +3,9 @@ import {
 } from 'react-router-dom';
 
 import { Home } from '../../pages/Home';
-import { Trainer } from '../../pages/Trainer';
 import { FormTrainers } from '../../pages/FormTrainers';
+import { About } from '../../pages/About';
+import { Trainer } from '../../pages/Trainer';
 import { NotFound } from '../../pages/NotFound';
 
 function Routes() {
@@ -14,12 +15,16 @@ function Routes() {
             element: <Home />,
         },
         {
-            path: "trainer",
-            element: <Trainer />
+            path: "new-trainer",
+            element: <FormTrainers />
         },
         {
-            path: "formTrainers",
-            element: <FormTrainers />
+            path: "about",
+            element: <About />
+        },
+        {
+            path: "detail-trainer",
+            element: <Trainer />
         },
         {
             path: "*",

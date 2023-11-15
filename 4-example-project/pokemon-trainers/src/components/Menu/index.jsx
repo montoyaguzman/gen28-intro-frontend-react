@@ -11,13 +11,13 @@ function Menu({ children }) {
             <Router>
                 <nav style={{ margin: 10 }}>
                     <Link to="/" style={{ padding: 5 }}>
-                        Catalogo
+                        Inicio
                     </Link>
-                    <Link to="/trainer" style={{ padding: 5 }}>
-                        Detalle entrenador
+                    <Link to="/new-trainer" style={{ padding: 5 }}>
+                        Crear un nuevo entrenador
                     </Link>
-                    <Link to="/formTrainers" style={{ padding: 5 }}>
-                        Agrega entrenador
+                    <Link to="/about" style={{ padding: 5 }}>
+                        Acerca de nosotros
                     </Link>
                 </nav>
 
