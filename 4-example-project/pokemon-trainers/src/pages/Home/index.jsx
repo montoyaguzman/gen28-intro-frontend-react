@@ -11,7 +11,6 @@ function Home() {
     return (
         <>
             <h1>page {namePage} works!</h1>
-            <Menu />
             {/* SearchForm */}
             <TrainersList />
             <Card />
