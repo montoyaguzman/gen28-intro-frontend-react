@@ -1,4 +1,13 @@
 .container-list {
     border: 2px solid blue;
     padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 2.25rem;
+}
+
+.container-80 {
+    width: 80%;
+    margin-inline: auto;
 }

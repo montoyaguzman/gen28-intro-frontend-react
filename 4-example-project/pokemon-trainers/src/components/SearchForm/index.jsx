@@ -31,22 +31,22 @@ function SearchForm() {
     return (
         <>
             <div className='container-form'>
-                <form id='search-form' onSubmit={handleForm}>
+                <form id='search-form' className='form-element' onSubmit={handleForm}>
 
-                    <label htmlFor="trainer-name">Escribe nombnre del entrenador...</label>
-                    <input type="text" id="trainer-name" name="trainer-name" placeholder='Escribe nombnre del entrenador...' />
-                    <SearchIcon />
-                    <p>
+                    <h2>Nombre del entrenador: </h2>
+                    <input type="text" id="trainer-name" name="trainer-name" placeholder='Nombre entrenador...' />
+                    {/* <SearchIcon /> */}
+                    <div className='radio-container'>
                         <TuneIcon />
-                        ¿Has sido campeón?:
+                        ¿Sólo campeones?:
                         <label htmlFor="true">Si</label>
                         <input type="radio" name="isChampion" id="true" />
 
                         <label htmlFor="false">No</label>
                         <input type="radio" name="isChampion" id="false" />
-                    </p>
+                    </div>
 
-                    <button type="submit">Buscar</button>
+                    <input type="submit" className="button-default" value="Buscar" />
 
                     {/* <Autocomplete
                         id="free-solo-demo"

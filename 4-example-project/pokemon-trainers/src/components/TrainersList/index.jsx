@@ -4,7 +4,7 @@ function TrainersList({ children }) {
 
     return (
         <>
-            <div className='container-list'>
+            <div className='container-list container-80'>
                 {children}
             </div>
         </>

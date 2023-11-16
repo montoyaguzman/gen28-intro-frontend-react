@@ -10,6 +10,8 @@ function Home() {
         { name: 'ash' },
         { name: 'misty' },
         { name: 'juanito banana' },
+        { name: 'misty' },
+        { name: 'misty' },
     ];
 
     return (
