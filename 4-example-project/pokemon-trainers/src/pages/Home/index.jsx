@@ -10,14 +10,21 @@ import { normalizedTrainers } from '../../normalized/trainers';
 function Home() {
 
     const [cards, setCards] = useState([]);
+    const [params, setParams] = useState();
 
     useEffect(() => {
         // logic to do only the first time
         getData();
     }, []);
 
+    useEffect(() => {
+        // logic to do only the first time
+        getData();
+    }, [params]);
+
     const getData = async () => {
-        const newTrainers = await getTrainers();
+        console.log('en Home', params);
+        const newTrainers = await getTrainers(params);
         const newTrainersNormalized = await normalizedTrainers(newTrainers);
         setCards(newTrainersNormalized);
     }
@@ -25,7 +32,7 @@ function Home() {
     return (
         <>
             <div className='container-home'>
-                <SearchForm />
+                <SearchForm setParams={setParams} />
                 <TrainersList>
 
                     {/* {cards.map((card, index) => <Card key={index} name={card.name}/>)} */}

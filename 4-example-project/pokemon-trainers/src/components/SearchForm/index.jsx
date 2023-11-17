@@ -6,7 +6,7 @@ import TuneIcon from '@mui/icons-material/Tune';
 // import TextField from '@mui/material/TextField';
 // import Autocomplete from '@mui/material/Autocomplete';
 
-function SearchForm() {
+function SearchForm({ setParams }) {
 
     const handleForm = (event) => {
         event.preventDefault();
@@ -21,10 +21,11 @@ function SearchForm() {
 
         const params = {
             name: trainerName,
-            isChampion: isChampion
+            hasThropies: isChampion === 'true' ? true : false
         };
 
-        console.log(params);
+        console.log('dentro de SearchForm', params);
+        setParams(params);
 
     }
 
@@ -40,10 +41,10 @@ function SearchForm() {
                         <TuneIcon />
                         ¿Sólo campeones?:
                         <label htmlFor="true">Si</label>
-                        <input type="radio" name="isChampion" id="true" />
+                        <input type="radio" name="isChampion" id="isChampion" value="true" />
 
                         <label htmlFor="false">No</label>
-                        <input type="radio" name="isChampion" id="false" />
+                        <input type="radio" name="isChampion" id="isChampion" value="false" />
                     </div>
 
                     <input type="submit" className="button-default" value="Buscar" />
